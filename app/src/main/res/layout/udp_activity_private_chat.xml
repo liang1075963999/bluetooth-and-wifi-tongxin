@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/edit_bottombar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_height="wrap_content"
+    android:id="@+id/lin"
+    android:orientation="horizontal">
+    <Button
+        android:id="@+id/buttonSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="发送" />
+    <Button
+        android:id="@+id/lianxu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="连续发送"/>
+
+    </LinearLayout>
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/lin"
+            android:layout_toRightOf="@+id/connect"
+            android:hint="说点什么呢?"
+            android:textSize="15dip" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/edit_bottombar"
+
+        android:layout_weight="1.0"
+        android:divider="#ffc6c6c6"
+        android:scrollingCache="false" />
+
+</RelativeLayout>
